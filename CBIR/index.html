@@ -1,0 +1,64 @@
+<!--
+    Author: Furqan Kassa
+    Date: 2/3/2023
+    Course: CSS 484
+
+    The index.html file is about the content of the website. It's about
+    what information is being displayed.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <script src='index.js'></script>
+        <title>Content Based Image Retrieval</title>
+    </head>
+    <body>
+        <!-- loading screen -->
+        <img id="preload" src="img/loading.gif">
+        <!-- The title of the website -->
+        <p>Developed by: Furqan Kassa</p>
+        <h1>Image Sorter</h1>
+        <!-- The element that displays the instructions being typed -->
+        <p id="secret"><span id="text"></span><span id="cursor">|</span></p></div>
+        <!-- Displays the query image -->
+        <section class="chosen">
+            <img>          
+        </section>
+        <!-- The pixel values for each image obtained from the canvas the image was drawn onto -->
+        <canvas id="canvas" width="384" height="256">
+        </canvas>
+        <!-- Displays the options for which algos to pick -->
+        <h1 id="result">Choose a method to sort:</h1>
+        <section class="btn">
+            <!-- The buttons for which algorithms to pick, or reset the display of the images -->
+            <button id="intensity">Intensity</button>
+            <button id="color">Color-Code</button>
+            <button id="reset">Reset</button>
+            <button id="both">Intensity & Color-Code</button>
+            <section>            
+                <input id="check" type="checkbox">
+                <label for="check" id="check">Relevance</label>
+            </section>
+        </section>
+        <div class="next-btn">
+            <!-- These buttons are for navigating the other images to query from-->
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
+        </div> 
+        <section class="images">
+            <!-- This sections holds the image database and appends it to the website-->
+            <article class="images-1"> 
+            </article>
+            <article class="images-2"> 
+            </article>
+            <article class="images-3">
+            </article>
+            <article class="images-4">
+            </article>
+            <article class="images-5">
+            </article>
+        </section>                                          
+    </body>
+</html>

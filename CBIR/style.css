@@ -1,0 +1,180 @@
+/*
+    Author: Furqan Kassa
+    Date: 2/3/2022
+    Course: CSS 484
+
+    The style.css file is about the presentation of the website. It's
+    mainly about the display of the HTML elements and the GUI of the
+    website.
+*/
+
+* {
+    color: white;
+    font-family: Garamond, serif;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 560% 560%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+#preload {
+    width: 70px;
+    height: 70px;
+}
+
+.chosen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 384px;
+    height: 256px;
+    background-color: #000;
+}
+
+#canvas {
+    display: none;
+    width: 384px;
+    height: 256px;
+}
+
+.chosen > img {
+    width: 384px;
+    height: 256px;
+}
+
+.fun {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2, h1 {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button, label {
+    font-size: 27px;
+}
+  
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    cursor: pointer;
+    color: black;
+    transition: 1s;
+    border-color: black;
+}
+  
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.images {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.next-btn {
+    margin-top: 25px;
+}
+
+#next {
+    float: right;
+}
+
+.images img {
+    padding: 5px;
+    border-radius: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.images div {
+    display: inline;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#preload {
+    width: 70px;
+    height: 70px;
+}
+
+div p, input {
+    display: inline;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.size {
+    width: 244px;
+    height: 126px;
+}
+
+.images img:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 4.25);
+    cursor: pointer;
+    transition: 1s;
+}
+
+#secret {
+    margin-bottom: auto;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#cursor {
+    color: white;
+    font-size: 30px;
+    padding-left: 0px;
+    animation: blink 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
